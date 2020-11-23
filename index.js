@@ -191,7 +191,7 @@
     function init() {
         promptUser()
             .then(answers => {
-                writeToFile('develop/README.md', generateMarkdown)
+                writeToFile('README.md', generateMarkdown(answers))
             }) 
     }
     
